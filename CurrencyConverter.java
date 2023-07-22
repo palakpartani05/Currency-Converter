@@ -12,8 +12,11 @@ public class CurrencyConverter extends JFrame{
     private JButton convert;
     private DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
     private double[] exchangeRates = {1.00, 87.14,0.84, 109.65, 0.72, 1.27, 1.30, 0.92, 6.47};
+    ImageIcon icon = new ImageIcon("currencyIcon.png");
+    
     public CurrencyConverter(){
         setTitle("Currency Converter");
+        setIconImage(icon.getImage());
         
         from = new JLabel("From :");
         from.setBounds(100, 50, 60,60);
